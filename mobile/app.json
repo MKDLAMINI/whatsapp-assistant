@@ -16,17 +16,32 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.whatsappassistant.app"
+      "bundleIdentifier": "com.whatsappassistant.app",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This app does not track you.",
+        "NSPhotoLibraryUsageDescription": "This app does not access your photo library."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#25D366"
       },
-      "package": "com.whatsappassistant.app"
+      "package": "com.whatsappassistant.app",
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-will-be-added-by-eas"
+      }
     }
   }
 }
