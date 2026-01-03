@@ -21,7 +21,7 @@ import { Ionicons } from "@expo/vector-icons";
 import axios from "axios";
 
 // IMPORTANT: Update this with your backend URL
-const API_BASE_URL = "https://ae80f174c8f8.ngrok-free.app";
+const API_BASE_URL = "https://whatsapp-assistant-production-8d24.up.railway.app";
 
 export default function App() {
   const [receivedMessage, setReceivedMessage] = useState("");
